@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Regular.eot');
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/Lato-Regular.woff') format('woff'),
+        url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Lighthaus';
+	src: url('../fonts/Lighthaus/Lighthaus.eot');
+	src: local('Lighthaus'),
+		url('../fonts/Lighthaus/Lighthaus.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lighthaus/Lighthaus.woff') format('woff'),
+		url('../fonts/Lighthaus/Lighthaus.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+

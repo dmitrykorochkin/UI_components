@@ -1,0 +1,254 @@
+@import url(./fonts.css);
+
+.form-img {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5.2rem;
+}
+.noscroll {overflow:scroll}
+
+.just-validate-error-label {
+  position: absolute;
+  padding-top: 3.5rem;
+  margin-top: 1rem;
+  margin-left: -28rem;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+.form-title {
+  text-align: center;
+  width: 79.8rem;
+  font-family: "Lighthaus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 130%;
+  margin: 0 auto;
+  
+}
+.form-circle {
+    width: 20px;
+    height: 20px;
+    background: #AF1828;
+    border-radius: 50%;
+    margin: 26px auto;
+}
+
+.form-img__item:nth-child(1) {
+  width: 16.1rem;
+  height: 23.8rem;
+  padding-top: 8rem;
+}
+.form-img__item:nth-child(2) {
+  width: 20.2rem;
+  height: 34.4rem;
+}
+.form-img__item:nth-child(3) {
+  width: 26.7rem;
+  height: 34rem;
+}
+.form-description {
+  margin: 0 auto;
+  width: 45.8rem;
+  font-size: 1.5rem;
+  line-height: 200%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 5.8rem;
+}
+
+.form-text span {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #bdbdbd;
+}
+.form-text a {
+  color: #bdbdbd;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.form-item {
+  text-align: center;
+  line-height: 123%;
+  color: #ffffff;
+  margin-bottom: 1.8rem;
+}
+::placeholder {
+  font-size: 1.3rem;
+}
+input {
+  font-size: 1.3rem;
+}
+
+.form-input {
+  width: 24.5rem;
+  height: 3.2rem;
+  background-color: transparent;
+  border: 0.1rem solid #ffffff;
+  color: #bdbdbd;
+  padding: 0.9rem;
+  margin-right: 3.2rem;
+}
+
+.form-button {
+  width: 9rem;
+  height: 3.4rem;
+  background-color: #af1828;
+  color: #ffffff;
+  font-size: 1.3rem;
+  line-height: 123%;
+}
+
+.form-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.form-checkbox + label::before {
+  content: " ";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.1rem solid #ffffff;
+}
+.form-checkbox:checked + label::before {
+  background-color: transparent;
+  background-image: url(../img/Vector1.svg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+
+}
+
+.modal-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 5rem;
+  width: 65rem;
+  height: 20rem;
+  background: #af1828;
+  font-family: "Lighthaus";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 130%;
+  text-align: center;
+  color: #ffffff;
+  z-index: 3333;
+  display: none;
+}
+
+
+.active {
+  display: block;
+  
+}
+
+.blur {
+
+backdrop-filter: blur(50px);
+}
+
+@media (max-width: 48em)  {
+  input {
+    font-size: 2.8rem;
+  }
+  
+  .form-title {
+    text-align: center;
+    width: 50rem;
+    font-size: 2.8rem;
+    margin-bottom: 7.2rem;
+    line-height: 200%;
+    margin-bottom: 12rem;
+  }
+
+  .form-description {
+    margin: 0 auto;
+    width: 57rem;
+    font-size: 1.9rem;
+
+    margin-bottom: 7.2rem;
+  }
+
+  ::placeholder {
+    font-size: 2.8rem;
+  }
+
+    .container {
+      padding: 2rem;
+    }
+
+    .form-input {
+      width: 100%;
+      height: 7.6rem;
+      margin-bottom: 3.6rem;
+      padding-left: 3.4rem;
+    }
+
+    .form-item {
+      margin-bottom: -5.2rem;
+    }
+
+    .form-input:last-child {
+      margin-right: 0;
+    }
+
+    .form-button {
+      width: 21rem;
+      height: 7.6rem;
+      background-color: #af1828;
+      color: #ffffff;
+      font-size: 2.8rem;
+      line-height: 123%;
+      margin-left: -29rem;
+      
+    }
+
+    .form-text {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: -8rem;
+      margin-bottom: 5.2rem;
+
+  }
+    
+    .form-text span {
+      font-size: 1.2rem;
+      width: 22rem;
+      text-align: start;
+      margin-left: 0.5rem;
+    }
+    .form-checkbox + label::before {
+      width: 3rem;
+      height: 3rem;
+
+    }
+
+    .form-checkbox:checked + label::before {
+        margin-left: 3rem;
+      
+    }
+    h1 span::before {
+     
+      left: 31rem;
+      bottom: 62rem;
+      width: 3.2rem;
+      height: 3.2rem;
+  }
+
+  .modal-inner {
+    top: 140%;
+    width: 57rem;
+  }
+
+}

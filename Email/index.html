@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B12 Form</title>
+    <link rel="stylesheet" href="css/set.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script defer src="js/inputmask.min.js"></script>
+    <!-- <script defer src="js/just-validate.min.js"></script> -->
+    <script defer src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script defer src="js/script.js"></script>
+    
+</head>
+<body >
+    <section class="form">
+         <div class="container">
+            <div class="form-img">
+                <img class="form-img__item" src="./img/img1.png" alt="">
+                <img class="form-img__item" src="./img/img2.png" alt="">
+                <img class="form-img__item" src="./img/img3.png" alt="">
+            </div>
+            <h1 class="form-title">
+                До последней метаморфозы<br> нашей бабочки<br> осталось совсем немного времени. 
+                
+            </h1>
+            <div class="form-circle"></div>
+            
+            <div class="form-description">
+                Оставив свои контакты, вы станете первым, кто узнает дату открытия нашего ресторана.
+            </div>
+
+        
+         <form  id="commentFrom" action="#" method="POST" class="form-elements">
+            <div class="form-item">
+                <label for="name" class="form__label">
+                    <input class="form-input form-input__style" data-validate-field="name" name="user-name" id="name" type="text" required placeholder="Ваше имя">
+                </label>
+                <label for="telephone" class="form-label">
+                    <input class="phone form-input form-input__style"  data-validate-field="tel" name="user-phone" id="telephone" type="tel" placeholder="Ваш телефон" required>
+                </label>
+                <label for="email" class="form-label">
+                    <input class="phone form-input form-input__style"  data-validate-field="email" name="user-email" id="email" type="email" placeholder="Email" required>
+                </label>
+                <button type="submit" class="button form-button form-button--style">Отправить</button>
+            </div>
+            <div class="form-item">
+                <input class="form-checkbox" type="checkbox" id="check">
+                <label class="form-text form-text__style" for="check">
+                    <span>Нажимая на кнопку “Отправить” вы соглашаетесь с условиями<a href="#"> Публичной оферты</a></span>
+                </label>
+            </div>
+        </form>
+         </div>
+    </section>
+
+    <div class="modal">
+        <div class="modal-inner">
+            <div class="modal-text">Спасибо,<br>
+                данные успешно отправлены</div>
+        </div>
+    </div>
+
+</body>
+</html>

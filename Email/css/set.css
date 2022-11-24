@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    font-family: 'Lato';
+    font-size: 0.520835vw;  /*для разрешения 1920px  0.520835 === 10px */
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #131314;
+    color: #fff;
+  }
+  
+  .container {
+    width: 93rem;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  input, 
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 48em) {
+    html,
+    body {
+      font-size: 1.5625vw;     /*font-size: (100/320) * 5vw */
+      -webkit-text-size-adjust: none;
+    }
+    .container {
+      
+      width: 100%;
+    }
+  }
